@@ -22,8 +22,6 @@ O desafio do analista é cruzar essas duas realidades.
 
 ## O Município (Lógica do IBGE)
 
-**O município**
-
 **Definição**  
 O município é uma unidade federativa autônoma, com estabilidade territorial e administrativa.  
 É a base para a coleta de dados censitários (renda, escolaridade, IDH).
@@ -37,8 +35,6 @@ Frequentemente, agrupa-se os municípios em microrregiões (unidades intermediá
 ---
 
 ## A Zona Eleitoral (Lógica do TSE)
-
-**A zona eleitoral**
 
 **Definição**  
 A Zona Eleitoral não é uma cidade nem um ente federativo; é uma subdivisão administrativa da Justiça Eleitoral destinada a operacionalizar o pleito (alistamento, locais de votação, apuração).
@@ -107,10 +103,15 @@ Elementos básicos: Ponto, Linha e Polígono.
 Cada objeto possui coordenadas e atributos próprios.  
 Sujeito à Generalização Cartográfica (depende da escala de entrada).
 
+![raster](./img/figura1.png)
+![vector-raster](./img/figura2.png)
+
+
 **Modelo Matricial/Raster (Baseado em Campo):**  
 Espaço dividido em uma grade de células (pixels).  
 Qualidade determinada pela Resolução Espacial (tamanho da célula).  
 Exemplo: Mapas de uso do solo ou imagens de satélite.
+
 
 ---
 
