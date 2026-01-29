@@ -12,7 +12,6 @@ Compreender como a proximidade geográfica entre eleitor e candidato influencia 
 
 V.O. Key Jr. (Southern Politics in State and Nation, 1949).
 
-[imagem]
 ---
 
 ## Contexto histórico
@@ -45,7 +44,7 @@ Aconteceu o oposto: a capital rejeitou o filho da casa em favor da onda do novo.
 
 ---
 
-[imagem]
+![exemplo-candidato](./img/figura1.png)
 A dinâmica territorial em relação a proximidade física do candidato era bem forte. 
 O candidato tinha o voto nos lugares em que já havia morado.
 O efeito do vizinho e amigo e o resto do estado sumia, acontecendo justamente nos dias de hoje.
