@@ -4,9 +4,10 @@
 
 ## O que é a Estimativa de Densidade Kernel (KDE)
 
-A KDE não é uma ferramenta estatística para transformar dados pontuais (discretos) em uma superfície contínua de probabilidade.
+A KDE é uma ferramenta estatística para transformar dados pontuais (discretos) - por exemplo, locais de votação - em uma superfície contínua de probabilidade. 
 
 Trata-se de um método não-paramétrico (não assume uma distribuição prévia dos dados, como a normal padrão) para analisar padrões de pontos (Silverman, 1986).
+Assumem que para você usar ele, você conhece sua distribuição de dados. Testes estatísticos em geral, inferem que sua distribuição de dados seguem alguma distribuição conhecida. 
 
 O objetivo é preencher os "vazios" entre os pontos de coleta (locais de votação), estimando a probabilidade de ocorrência do fenômeno em qualquer lugar da área de estudo. É baseada no princípio de que a densidade em um ponto é influenciada pela proximidade de outros dados.
 
@@ -21,8 +22,11 @@ Imagine que cada local de votação é um monte de areia. Onde os montes estão 
 
 ## Histórico: o mapa de John Snow
 ![mapa](./img/figura2.png)
+A cidade de Londres estava enfrentando um surto de cólera e John fez um trabalho de campo para saber onde estava sendo registrado os casos de morte por cólera. Assim, pegou o mapa dele e geolocalizou os casos de cólera. No estudo ele percebeu que os casos estavam concetrados  perto das bomba de água (representadas pelo x no mapa). Concluindo que a bomba estava contamina por cólera. Esse experimento de análise de espacial permetiu identificar a causa da doença e perceber que o vetor de transmissão da cólera é a água contaminada.
+
 ![mapa](./img/figura3.png)
 
+Foi criada o mapa das ruas usando a densidade de kernal, em que onde há maior aglomeração de pontos era onde ficava a bomba da água contaminada.
 
 ---
 
@@ -43,7 +47,7 @@ O KDE ajuda a visualizar se o apoio é isolado (pontual) ou se existe um contág
 ---
 
 Para confirmar estatisticamente o efeito de segunda ordem (o "contágio" ou "efeito vizinhança"), o próximo passo seria calcular o Índice de Moran Global ou Local (LISA) sobre esses dados.  
-[Aula 4!]
+[Aula 4]
 
 ---
 
@@ -60,6 +64,7 @@ A soma de todas essas pequenas "curvas em sino" cria a superfície suave do mapa
 
 ---
 ![largura](./img/figura4.png)
+
 ![kernel-map](./img/figura5.png)
 
 
@@ -94,7 +99,7 @@ Dessa forma, o ruído da densidade urbana é contornado.
 
 ## Fórmula para normalização
 
-I_local = (v_ij / V_j) × 100
+$I_{\text{local}} = \left( \frac{v_{ij}}{V_j} \right) \times 100$
 
 **Onde:**
 
